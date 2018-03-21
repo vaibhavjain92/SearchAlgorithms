@@ -19,7 +19,7 @@ void bubbleSort(vector<int> &nums, int n)
 			return;
 	}
 }
-void print(std::vector<int> vec)
+void print(std::vector<int> vec, int n)
 {
 	for(int i: vec)
 		cout<<i<<" ";
@@ -29,9 +29,9 @@ int main() {
 	vector<int>  input = {8, 7,6,5,4,3,1};
 	int n  = input.size();
 	cout<<"Before Sort: ";
-	print(input);
+	print(input, n);
 	bubbleSort(input, n);
 	cout<<"After Sort: ";
-	print(input);
+	print(input, n);
 	return 0;
 }
