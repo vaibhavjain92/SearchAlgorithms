@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void print(std::vector<int> vec, int n)
+void print(std::vector<int> vec)
 {
 	for(int i: vec)
 		cout<<i<<" ";
@@ -14,7 +14,7 @@ void insertionSort(vector<int> &nums, int n)
 	for(int i = 1; i < n; i++)
 	{
 		int x = nums[i];
-		int j = i-1;
+		int j = i-1		;
 		while(j >=0  && nums[j]>x)
 		{
 			nums[j+1] = nums[j--];
